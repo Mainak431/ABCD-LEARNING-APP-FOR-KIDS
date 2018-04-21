@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+{%load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/jpg" href="{% static "login-back.jpg" %}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1 height=device-height">
+    <title> LEARN ABCD </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+.div {
+ background:transparent;
+ }
+body {
+    background-image: url("{% static "back.jpg" %}");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 100px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 10px;
+}
+
+.column img {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    filter:alpha(opacity=100);
+    vertical-align: middle;
+		
+		
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+h1{
+		font-size: 150px;
+		font-family: Arial;
+ 		color: white;
+}
+</style>
+<script>
+
+</script>
+<body>
+
+<div class="container-fuild">
+  <div class="row">
+  <h1 align="left">{{d.name}}</h1>
+  <div class="column" align="center">
+    <a href="check/{{d.id}}/0/{{index}}"><img src="{{c.url}}" style="width:100%"></a>
+    <a href="check/{{d.id}}/1/{{index}}"><img src="{{e.url}}" style="width:100%"></a>
+    
+  </div>  
+  <div class="column" align="center">
+    <a href="check/{{d.id}}/2/{{index}}"><img src="{{f.url}}" style="width:100%"></a>
+    <a href="check/{{d.id}}/3/{{index}}"><img src="{{g.url}}" style="width:100%"></a>
+    
+  </div>
+    </div>
+</div>
+</body>
+</html>
+

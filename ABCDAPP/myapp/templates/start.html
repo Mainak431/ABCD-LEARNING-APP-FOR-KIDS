@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/jpg" href="{% static "login-back.jpg" %}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1 height=device-height">
+    <title> LEARN ABCD</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<style>
+body  {
+        background-image: url("{% static "charlie1.gif" %}");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+		
+}
+
+h1{
+		font-family: Arial;
+		font-size: 100px;
+		color: #181817;
+
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+</style>
+<script>
+     window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+</script>
+<body>
+<audio id="my_audio" src="{% static "music.mp3" %}" loop="loop">
+</audio>
+<div class = "container-fluid">
+    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+        <h1 align="center">&nbsp;&nbsp;</h1>
+        <h2 align="center">&nbsp;&nbsp;</h2>
+        <a href="/letter/0/">
+        <img border="0" alt="start" src="{% static "start.png" %}" width="350" height="350" align="right">
+        </a>
+        <h1 align="center">&nbsp;&nbsp;</h1>
+        <h3 align="center">&nbsp;&nbsp;</h3>
+        <h5 align="center">&nbsp;&nbsp;</h5>
+
+    </div>
+    <div clas="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+        <footer>
+            &copy; IIIT ALLAHABAD 2018
+        </footer>
+    </div>
+</div>
+</body>
+</html>

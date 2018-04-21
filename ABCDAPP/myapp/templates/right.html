@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/jpg" href="{% static "login-back.jpg" %}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1 height=device-height">
+    <title> LEARN ABCD </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>LEARN ABCD </title>
+</head>
+<style>
+body  {
+    background-image: url("{% static "charlie2.gif" %}");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+}
+h1{
+		font-family: Arial;
+		font-size: 150px;
+		color: white;
+}
+h2{
+		font-family: Arial;
+		font-size: 50px;
+		color: white;
+}
+</style>
+<script>
+    window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+</script>
+<body>
+<audio autoplay>
+<source src="{% static "congratulations.mp3" %}"/>
+</audio>
+
+<h2>
+<img src="{% static "right.png" %}" style="width:10%"> <img align="right" src="{{d.correct.url}}" style="width:20%;height:10%;">
+</h2>
+
+<h2>
+    &nbsp;{{d.message}}
+</h2>
+<h3>
+    &nbsp;
+</h3>
+<h2>
+    &nbsp;
+</h2>
+<audio autoplay controls src="{{d.Audio.url}}" style="align:right">
+</audio>
+<a href="/letter/{{d.id}}/">
+<img src="{% static "next_button.png" %}" style="width:10%" align="right">
+</a>
+<h2>&nbsp;</h2>
+
+</body>
+</html>
+

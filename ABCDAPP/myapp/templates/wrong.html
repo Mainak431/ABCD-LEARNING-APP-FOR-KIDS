@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+{%load static %}
+<head>
+    <title>LEARN ABCD</title>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/jpg" href="{% static "login-back.jpg" %}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1 height=device-height">
+    <title> LEARN ABCD </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<style>
+body  {
+    background-image: url({% static "back4.jpg" %});
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+		
+}
+h1{
+		font-family: Arial;
+		font-size: 100px;
+		color: white;
+}
+h2{
+		font-family: Arial;
+		font-size: 50px;
+		color: white;
+}
+</style>
+<body>
+
+<img src="{% static "wrong.png" %}" style="width:10%">
+<audio autoplay>
+<source src="{% static "game_over.mp3" %}"/>
+</audio>
+
+<br><br><br><br><br>
+<h2>
+    &nbsp;
+</h2>
+<h2>
+    &nbsp;
+</h2>
+<a href="/redirect/{{d.id}}/">
+<img src="{% static "next_button.png" %}" style="width:10%" align="right">
+</a>
+<h2>&nbsp;</h2>
+<h2>&nbsp</h2>
+
+</body>
+</html>
+
